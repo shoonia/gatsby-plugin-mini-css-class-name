@@ -1,0 +1,31 @@
+{
+  "name": "gatsby-plugin-mini-css-class-name",
+  "version": "1.0.0",
+  "description": "Minifying CSS class name",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "mini-css-class-name": "^0.6.3"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.15"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.2.0",
+    "lodash": "^4.0.0"
+  },
+  "keywords": [
+    "css",
+    "gatsy",
+    "minify"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoonia/gatsby-plugin-mini-css-class-name.git"
+  },
+  "author": "zaytsev126@gmail.com",
+  "license": "MIT"
+}
