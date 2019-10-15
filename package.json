@@ -7,11 +7,8 @@
   "dependencies": {
     "mini-css-class-name": "^0.6.3"
   },
-  "devDependencies": {
-    "lodash": "^4.17.15"
-  },
   "peerDependencies": {
-    "gatsby": "^2.2.0",
+    "gatsby": "^2.0.0",
     "lodash": "^4.0.0"
   },
   "keywords": [
@@ -26,6 +23,12 @@
     "type": "git",
     "url": "https://github.com/shoonia/gatsby-plugin-mini-css-class-name.git"
   },
+  "files": [
+    "gatsby-node.js",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "zaytsev126@gmail.com",
   "license": "MIT"
 }

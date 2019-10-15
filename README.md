@@ -4,7 +4,9 @@ Minifying CSS class names if using [css-modules](https://github.com/css-modules/
 
 ## Install
 ```bash
-# TODO:
+npm i gatsby-plugin-mini-css-class-name
+#or
+yarn add gatsby-plugin-mini-css-class-name
 ```
 
 ## How to use
