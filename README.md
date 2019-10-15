@@ -10,14 +10,21 @@ yarn add gatsby-plugin-mini-css-class-name
 ```
 
 ## How to use
-**gatsby-config.js**
 ```js
+// In your gatsby-config.js
+module.exports = {
+  plugins: [`gatsby-plugin-mini-css-class-name`],
+}
+```
+If you need to pass plugin [options](#options):
+```js
+// In your gatsby-config.js
 module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-mini-css-class-name`,
       options: {
-        prefix: `x-`
+        prefix: `x-`,
       },
     },
   ],

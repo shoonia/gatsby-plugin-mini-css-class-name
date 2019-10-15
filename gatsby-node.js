@@ -1,5 +1,5 @@
 const cloneDeepWith = require("lodash/cloneDeepWith");
-const isFunction = require("lodash/isFunction")
+const isFunction = require("lodash/isFunction");
 const miniClassNames = require("mini-css-class-name/css-loader");
 
 let generator = null;
