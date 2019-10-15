@@ -1,8 +1,17 @@
 const cloneDeepWith = require("lodash/cloneDeepWith");
-// const miniClassNames = require("mini-css-class-name/css-loader");
+const isFunction = require("lodash/isFunction")
+const miniClassNames = require("mini-css-class-name/css-loader");
+
+let generator = null;
 
 function getGenerator(options) {
-  // TODO:
+  if (isFunction(generator)) {
+    return generator;
+  }
+
+  generator = miniClassNames(options);
+
+  return generator;
 }
 
 exports.onCreateWebpackConfig = ({ stage, actions, getConfig }, options) => {

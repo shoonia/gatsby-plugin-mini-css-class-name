@@ -1,21 +1,21 @@
 # gatsby-plugin-mini-css-class-name
 
-Minifying CSS class name
+Minifying CSS class names if using [css-modules](https://github.com/css-modules/css-modules).
 
 ## Install
 ```bash
+# TODO:
 ```
 
 ## How to use
+**gatsby-config.js**
 ```js
 module.exports = {
   plugins: [
     {
       resolve: `gatsby-plugin-mini-css-class-name`,
       options: {
-        prefix: "x__",
-        suffix: "--",
-        hash: 4,
+        prefix: `x-`
       },
     },
   ],
