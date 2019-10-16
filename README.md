@@ -1,6 +1,8 @@
 # gatsby-plugin-mini-css-class-name
 
-Minifying CSS class names if using [css-modules](https://github.com/css-modules/css-modules).
+Minifying CSS class names if using [css-modules](https://github.com/css-modules/css-modules#readme).
+
+> [mini-css-class-name](https://github.com/shoonia/mini-css-class-name#readme)
 
 ## Install
 ```bash

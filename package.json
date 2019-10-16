@@ -1,11 +1,11 @@
 {
   "name": "gatsby-plugin-mini-css-class-name",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Minifying CSS class names if using css-modules",
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "mini-css-class-name": "^0.6.3"
+    "mini-css-class-name": "^0.7.0"
   },
   "peerDependencies": {
     "gatsby": "^2.0.0",
@@ -33,6 +33,10 @@
     "README.md"
   ],
   "homepage": "https://github.com/shoonia/gatsby-plugin-mini-css-class-name#readme",
-  "author": "zaytsev126@gmail.com",
+  "author": {
+    "name": "Alexander Zaytsev",
+    "email": "zaytsev126@gmail.com",
+    "url": "https://twitter.com/_shoonia"
+  },
   "license": "MIT"
 }
