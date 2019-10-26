@@ -41,5 +41,17 @@ module.exports = {
 |  **hash**        | `{Number}` |   `0`   | A length of generating a random hash tail for each class name
 |**excludePattern**| `{RegExp}` | `null`  | A regular expression for removing characters
 
+> ⚠️ This plugin contributes change to Webpack config that way this plugin must be the last plugin witch work with CSS in your `gatsby-config.js`
+
+```js
+// In your gatsby-config.js
+module.exports = {
+  plugins: [
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-mini-css-class-name`, // after PostCSS
+  ],
+}
+```
+
 ## License
 [MIT](./LICENSE)
