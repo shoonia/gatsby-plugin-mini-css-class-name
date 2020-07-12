@@ -3,10 +3,10 @@ const miniClassName = require("mini-css-class-name");
 
 const cache = new Map();
 
-function createLocaiIdent(options) {
+const createLocaiIdent = (options) => {
   const generate = miniClassName(options);
 
-  return function (context, _, localName) {
+  return (context, _, localName) => {
     const key = context.resourcePath + localName;
 
     if (cache.has(key)) {
