@@ -48,7 +48,6 @@ module.exports = {
 |:----------------:|:----------:|:-------:|:-----------:|
 | **prefix**       | `{String}` |  `""`   | A custom prefix will be added to each class name
 | **suffix**       | `{String}` |  `""`   | A custom suffix will be added to each class name
-|  **hash**        | `{Number}` |   `0`   | A length of generating a random hash tail for each class name
 |**excludePattern**| `{RegExp}` | `null`  | A regular expression for removing characters
 
 > [mini-css-class-name](https://github.com/shoonia/mini-css-class-name#readme)

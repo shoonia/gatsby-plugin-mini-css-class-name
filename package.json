@@ -1,14 +1,14 @@
 {
   "name": "gatsby-plugin-mini-css-class-name",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Minifying CSS class names if using css-modules",
   "main": "index.js",
   "dependencies": {
-    "mini-css-class-name": "^0.9.3"
+    "mini-css-class-name": "^0.10.0"
   },
   "peerDependencies": {
-    "gatsby": ">=2.0.0",
-    "lodash": ">=4.0.0"
+    "gatsby": "^2.0.0",
+    "lodash": "^4.0.0"
   },
   "keywords": [
     "css",
@@ -16,9 +16,6 @@
     "gatsby",
     "gatsby-plugin"
   ],
-  "engines": {
-    "node": ">=8.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shoonia/gatsby-plugin-mini-css-class-name.git"
