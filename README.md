@@ -1,5 +1,7 @@
 # gatsby-plugin-mini-css-class-name
 
+[![npm version](https://img.shields.io/npm/v/gatsby-plugin-mini-css-class-name.svg)](https://www.npmjs.com/package/gatsby-plugin-mini-css-class-name)
+
 Minifying CSS class names if using [CSS Modules](https://www.gatsbyjs.org/docs/css-modules/).
 
 ## Install
