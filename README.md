@@ -4,6 +4,11 @@
 
 Minifying CSS class names if using [CSS Modules](https://www.gatsbyjs.org/docs/css-modules/).
 
+```diff
+- <p class="post-module--text--w-3Tg">Hello</p>
++ <p class="a">Hello</p>
+```
+
 ## Install
 ```bash
 npm i gatsby-plugin-mini-css-class-name
