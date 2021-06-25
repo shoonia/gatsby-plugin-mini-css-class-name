@@ -2,14 +2,12 @@ beforeEach(() => {
   jest.resetAllMocks();
 });
 
-const createMock = (config) => {
+exports.createMock = (config) => {
   return {
     stage: 'build-javascript',
-    actions: { replaceWebpackConfig: jest.fn() },
-    getConfig: () => config,
+    actions: {
+      replaceWebpackConfig: jest.fn(),
+    },
+    getConfig: jest.fn(() => config),
   };
-};
-
-module.exports = {
-  createMock,
 };
