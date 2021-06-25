@@ -30,14 +30,17 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }, options) => {
 
     config.module.rules = cloneDeepWith(config.module.rules, (value, key) => {
       if (key === 'options') {
-        // css-loader <= ^2.0.0
+        // css-loader <= v2.0.0
         if (value.modules === true && isString(value.localIdentName)) {
           delete value.localIdentName;
+
           value.getLocalIdent = getLocalIdent;
         }
-        // css-loader >= 3.0.0
+
+        // css-loader >= v3.0.0
         else if (has(value, 'modules.localIdentName') && isString(value.modules.localIdentName)) {
           delete value.modules.localIdentName;
+
           value.modules.getLocalIdent = getLocalIdent;
         }
 
