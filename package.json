@@ -4,13 +4,19 @@
   "description": "Minifying CSS class names if using css-modules",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint '**/*.js'",
     "test": "jest"
   },
   "dependencies": {
     "mini-css-class-name": "^0.12.1"
   },
   "devDependencies": {
-    "jest": "^27.0.5"
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.5",
+    "eslint": "^7.29.0",
+    "gatsby-plugin-utils": "^1.8.0",
+    "jest": "^27.0.5",
+    "simple-git-hooks": "^2.5.1"
   },
   "peerDependencies": {
     "gatsby": "^2.0.0 || ^3.0.0",
@@ -20,6 +26,9 @@
     "gatsby": {
       "optional": true
     }
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint"
   },
   "keywords": [
     "css",

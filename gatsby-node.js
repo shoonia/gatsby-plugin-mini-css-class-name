@@ -51,3 +51,11 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }, options) => {
     actions.replaceWebpackConfig(config);
   }
 };
+
+exports.pluginOptionsSchema = ({ Joi }) => {
+  return Joi.object({
+    prefix: Joi.string(),
+    suffix: Joi.string(),
+    excludePattern: Joi.object().regex(),
+  });
+};
