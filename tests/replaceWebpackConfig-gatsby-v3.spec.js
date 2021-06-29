@@ -20,9 +20,9 @@ describe('replace webpack config with Gatsby v3', () => {
                         namedExport: true,
                         localIdentName: '[local]_[hash:base64:4]',
                         exportLocalsConvention: 'dashesOnly',
-                        exportOnlyLocals: true
-                      }
-                    }
+                        exportOnlyLocals: true,
+                      },
+                    },
                   },
                 ],
               },
@@ -49,8 +49,8 @@ describe('replace webpack config with Gatsby v3', () => {
                         exportLocalsConvention: 'dashesOnly',
                         exportOnlyLocals: true,
                         getLocalIdent: expect.any(Function),
-                      }
-                    }
+                      },
+                    },
                   },
                 ],
               },
