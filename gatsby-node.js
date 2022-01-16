@@ -1,9 +1,9 @@
 const cloneDeepWith = require('lodash/cloneDeepWith');
-const isString = require('lodash/isString');
 const has = require('lodash/has');
 const miniClassName = require('mini-css-class-name');
 
 const cache = new Map();
+const isString = (val) => typeof val === 'string';
 
 const createLocaiIdent = (options) => {
   const generate = miniClassName(options);
