@@ -2,7 +2,6 @@ node_modules/
 
 .DS_Store
 .gitignore
-.npmrc
 package-lock.json
 
 *.log*

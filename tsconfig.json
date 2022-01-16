@@ -1,13 +1,15 @@
 {
-  "allowJs": true,
   "compilerOptions": {
+    "allowJs": true,
     "checkJs": true,
     "module": "es2020",
     "moduleResolution": "node",
-    "target": "es2020",
+    "target": "es2021",
     "sourceMap": false,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
     "lib": [
-      "es2020"
+      "es2021"
     ]
   },
   "include": [
