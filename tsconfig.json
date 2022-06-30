@@ -2,19 +2,18 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "module": "es2020",
+    "module": "es2022",
     "moduleResolution": "node",
-    "target": "es2021",
+    "target": "es2022",
     "sourceMap": false,
     "noEmit": true,
     "forceConsistentCasingInFileNames": true,
     "lib": [
-      "es2021"
+      "es2022"
     ]
   },
   "include": [
-    "**/*.js",
-    "tests/*.js"
+    "**/*.js"
   ],
   "exclude": [
     "node_modules"
