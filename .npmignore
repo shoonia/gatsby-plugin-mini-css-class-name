@@ -1,8 +1,0 @@
-node_modules/
-
-.DS_Store
-.gitignore
-package-lock.json
-
-*.log*
-*.tgz
