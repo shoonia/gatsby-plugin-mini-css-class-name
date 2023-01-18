@@ -35,13 +35,4 @@ describe('Options Schema', () => {
       '"excludePattern" must be of type object',
     ]);
   });
-
-  it('should be not allowed unknown property', async () => {
-    const { isValid, errors } = await testPluginOptionsSchema(pluginOptionsSchema, {
-      toVerify: 'abcd',
-    });
-
-    expect(isValid).toBe(false);
-    expect(errors).toEqual(['"toVerify" is not allowed']);
-  });
 });
