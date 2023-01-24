@@ -1,5 +1,6 @@
 # gatsby-plugin-mini-css-class-name
 
+[![test](https://github.com/shoonia/gatsby-plugin-mini-css-class-name/actions/workflows/test.yml/badge.svg)](https://github.com/shoonia/gatsby-plugin-mini-css-class-name/actions/workflows/test.yml)
 [![npm version](https://img.shields.io/npm/v/gatsby-plugin-mini-css-class-name.svg)](https://www.npmjs.com/package/gatsby-plugin-mini-css-class-name)
 
 Minifying CSS class names if using [CSS Modules](https://www.gatsbyjs.org/docs/css-modules/).
