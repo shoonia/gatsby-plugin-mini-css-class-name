@@ -1,12 +1,11 @@
 const cloneDeepWith = require('lodash/cloneDeepWith');
-const has = require('lodash/has');
-const miniClassName = require('mini-css-class-name');
+const miniCssClassName = require('mini-css-class-name');
 
 const cache = new Map();
 const isString = (val) => typeof val === 'string';
 
 const createLocaiIdent = (options) => {
-  const generate = miniClassName(options);
+  const generate = miniCssClassName(options);
 
   return (context, _, localName) => {
     const key = context.resourcePath + localName;
@@ -38,7 +37,7 @@ exports.onCreateWebpackConfig = ({ stage, actions, getConfig }, options) => {
         }
 
         // css-loader >= v3.0.0
-        else if (has(value, 'modules.localIdentName') && isString(value.modules.localIdentName)) {
+        else if (isString(value.modules?.localIdentName)) {
           delete value.modules.localIdentName;
 
           value.modules.getLocalIdent = getLocalIdent;
