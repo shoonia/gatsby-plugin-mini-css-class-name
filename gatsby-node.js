@@ -1,31 +1,13 @@
 const cloneDeepWith = require('lodash/cloneDeepWith');
-const miniCssClassName = require('mini-css-class-name');
+const createLocaiIdent = require('mini-css-class-name/css-loader');
 
 const cache = new Map();
 const isString = (val) => typeof val === 'string';
 
-const createLocaiIdent = (options) => {
-  const generate = miniCssClassName(options);
-
-  return (context, _, localName) => {
-    const key = context.resourcePath + localName;
-
-    if (cache.has(key)) {
-      return cache.get(key);
-    }
-
-    const className = generate();
-
-    cache.set(key, className);
-
-    return className;
-  };
-};
-
 exports.onCreateWebpackConfig = ({ stage, actions, getConfig }, options) => {
   if (stage.includes('build')) {
     const config = getConfig();
-    const getLocalIdent = createLocaiIdent(options);
+    const getLocalIdent = createLocaiIdent({ cache, ...options });
 
     config.module.rules = cloneDeepWith(config.module.rules, (value, key) => {
       if (key === 'options') {
