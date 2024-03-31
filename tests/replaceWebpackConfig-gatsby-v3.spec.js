@@ -66,6 +66,6 @@ describe('replace webpack config with Gatsby v3', () => {
 
     expect(getConfig).toHaveBeenCalledTimes(1);
     expect(actions.replaceWebpackConfig).toHaveBeenCalledTimes(1);
-    expect(actions.replaceWebpackConfig).toHaveBeenCalledWith(expectedConfig);
+    expect(actions.replaceWebpackConfig).toHaveBeenLastCalledWith(expectedConfig);
   });
 });

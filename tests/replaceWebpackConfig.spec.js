@@ -56,6 +56,6 @@ describe('replace webpack config', () => {
 
     expect(getConfig).toHaveBeenCalledTimes(1);
     expect(actions.replaceWebpackConfig).toHaveBeenCalledTimes(1);
-    expect(actions.replaceWebpackConfig).toHaveBeenCalledWith(expectedConfig);
+    expect(actions.replaceWebpackConfig).toHaveBeenLastCalledWith(expectedConfig);
   });
 });

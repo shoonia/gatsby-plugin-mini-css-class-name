@@ -7,7 +7,7 @@ describe('Options Schema', () => {
     const { isValid, errors } = await testPluginOptionsSchema(pluginOptionsSchema, {});
 
     expect(isValid).toBe(true);
-    expect(errors).toEqual([]);
+    expect(errors).toStrictEqual([]);
   });
 
   it('should be valid a schema', async () => {
@@ -18,7 +18,7 @@ describe('Options Schema', () => {
     });
 
     expect(isValid).toBe(true);
-    expect(errors).toEqual([]);
+    expect(errors).toStrictEqual([]);
   });
 
   it('should be invalid a schema', async () => {
@@ -29,7 +29,7 @@ describe('Options Schema', () => {
     });
 
     expect(isValid).toBe(false);
-    expect(errors).toEqual([
+    expect(errors).toStrictEqual([
       '"prefix" must be a string',
       '"suffix" must be a string',
       '"excludePattern" must be of type object',
