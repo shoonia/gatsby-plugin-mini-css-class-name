@@ -2,7 +2,12 @@ pre-commit:
   parallel: true
   commands:
     lint:
-      run: npm run lint && npm test
+      run: npm run lint
+      skip:
+        - merge
+        - rebase
+    test:
+      run: npm test
       skip:
         - merge
         - rebase
