@@ -4,7 +4,7 @@ const plugin = require('../gatsby-node');
 
 describe('replace webpack config', () => {
   it('should add the getLocalIdent plugin to css-loader v1.*', () => {
-    const mockConfig = {
+    const { stage, actions, getConfig } = createMock({
       module: {
         rules: [
           {
@@ -25,9 +25,13 @@ describe('replace webpack config', () => {
           },
         ],
       },
-    };
+    });
 
-    const expectedConfig = {
+    plugin.onCreateWebpackConfig({ stage, actions, getConfig });
+
+    expect(getConfig).toHaveBeenCalledTimes(1);
+    expect(actions.replaceWebpackConfig).toHaveBeenCalledTimes(1);
+    expect(actions.replaceWebpackConfig).toHaveBeenLastCalledWith({
       module: {
         rules: [
           {
@@ -48,14 +52,6 @@ describe('replace webpack config', () => {
           },
         ],
       },
-    };
-
-    const { stage, actions, getConfig } = createMock(mockConfig);
-
-    plugin.onCreateWebpackConfig({ stage, actions, getConfig });
-
-    expect(getConfig).toHaveBeenCalledTimes(1);
-    expect(actions.replaceWebpackConfig).toHaveBeenCalledTimes(1);
-    expect(actions.replaceWebpackConfig).toHaveBeenLastCalledWith(expectedConfig);
+    });
   });
 });
