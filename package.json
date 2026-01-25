@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-mini-css-class-name",
-  "version": "6.1.2",
+  "version": "6.1.3",
   "description": "Minifying CSS class names if using css-modules",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "lodash": "^4.17.21",
-    "mini-css-class-name": "^0.15.1"
+    "lodash": "^4.17.23",
+    "mini-css-class-name": "^0.15.2"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
